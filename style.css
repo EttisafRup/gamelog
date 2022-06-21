@@ -1,0 +1,112 @@
+/* Set-up CSS */
+
+*{
+    margin: 0;
+    top: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Special Elite', cursive;
+    background-attachment: fixed;
+}
+
+#break{
+    margin-top: 1.8rem;
+}
+
+/* Main CSS */
+
+i{
+    font-size: 2rem;
+    animation: color 0.5s linear infinite alternate;
+}
+
+@keyframes color {
+    0%{
+        color: green;
+    }
+    50%{
+        color: rgb(0, 192, 0);
+    }
+    100%{
+        color: rgb(0, 255, 0);
+
+    }
+    
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.form{
+    margin-top: 10rem;
+    padding: 5rem 8rem;
+    border-radius: 5rem 0rem 7rem 5rem;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+.form label{
+    color: white;
+    font-size: 2.8rem;
+    border-bottom: 0.3rem solid rgb(0, 184, 0);
+    border-radius: 40%;
+}
+
+.form input{
+    background: transparent;
+    border: none; outline: none;
+    border-bottom: 0.2rem solid rgb(0, 255, 0);
+    width: 25rem;
+    animation: input 0.8s linear infinite alternate;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'AudioWide', cursive;
+    border-radius: 0rem 0rem 0rem 2rem;
+}
+@keyframes input {
+    0%{
+        color: rgba(255, 255, 255, 0.37);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+    }
+    
+}
+
+.form p{
+    color: white;
+    font-size: 1.8rem;
+}
+
+.form button{
+    color: white;
+    font-family: 'Special Elite', cursive;
+    background: transparent;
+    border: 0.2rem solid rgb(0, 255, 0);
+    font-size: 1.6rem;
+    padding: 0.7rem 2.3rem;
+    border-radius: 4.5rem 0rem 4.5rem 0rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.form button:hover{
+    color: white;
+    text-shadow: 0 0 1rem white;
+    font-family: 'Special Elite', cursive;
+    background: rgb(0, 255, 0);
+    font-size: 1.6rem;
+    padding: 0.7rem 2.3rem;
+    border-radius: 4.5rem 0rem 4.5rem 0rem;
+}
+
+::placeholder{
+    font-family: 'Special Elite', cursive;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 1.7rem;
+}
